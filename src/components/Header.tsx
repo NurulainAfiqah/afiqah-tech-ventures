@@ -32,7 +32,7 @@ export const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="text-2xl font-bold text-portfolio-purple-400">
-          Nurulain<span className="text-portfolio-green-400">.dev</span>
+          Port<span className="text-portfolio-green-400">folio</span>
         </a>
 
         {/* Desktop Navigation */}
