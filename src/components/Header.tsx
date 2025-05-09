@@ -1,4 +1,6 @@
-
+// Header.tsx
+// This component is a responsive header for a portfolio website.
+// It includes a logo, navigation links, and a mobile menu toggle.
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
