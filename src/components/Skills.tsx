@@ -1,29 +1,33 @@
-
 import { Progress } from "@/components/ui/progress";
 import { CheckCircle2 } from "lucide-react";
 
 const Skills = () => {
   const technicalSkills = [
-    { name: "React", proficiency: 95 },
+    { name: "C++", proficiency: 85 },
     { name: "Python", proficiency: 90 },
-    { name: "Java", proficiency: 85 },
+    { name: "Java", proficiency: 90 },
     { name: "Node.js", proficiency: 80 },
-    { name: "SQL", proficiency: 85 },
+    { name: "SQL", proficiency: 95 },
+    { name: "Django", proficiency: 85 },
+    { name: "Laravel", proficiency: 70 },
   ];
 
   const softSkills = [
     "Team Leadership",
-    "Project Management",
     "Problem Solving",
     "Communication",
-    "Adaptability",
+  ];
+
+  const scholarAwards = [
+   "Yayasan Telekom Malaysia Scholar",
   ];
 
   const certifications = [
-    "ICDL - Teamwork & Productivity",
-    "Oracle Certified Associate",
-    "AWS Cloud Practitioner",
-    "Google Project Management",
+    "ICDL - Document",
+    "ICDL - Spreadsheet",
+    "ICDL - Teamwork",
+    "ICDL - Presentation",
+    "ICDL - Digital Marketing",
   ];
 
   return (
@@ -34,6 +38,7 @@ const Skills = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Technical Skills */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-portfolio-purple-500">Technical Skills</h3>
             <div className="space-y-6">
@@ -52,6 +57,7 @@ const Skills = () => {
             </div>
           </div>
 
+          {/* Soft Skills, Awards, Certifications */}
           <div className="space-y-10">
             <div>
               <h3 className="text-xl font-semibold mb-6 text-portfolio-purple-500">Soft Skills</h3>
@@ -60,6 +66,18 @@ const Skills = () => {
                   <li key={skill} className="flex items-center">
                     <CheckCircle2 className="mr-2 h-5 w-5 text-portfolio-green-500" />
                     <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-6 text-portfolio-purple-500">Scholar Awards</h3>
+              <ul className="space-y-3">
+                {scholarAwards.map((award) => (
+                  <li key={award} className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-5 w-5 text-portfolio-green-500" />
+                    <span>{award}</span>
                   </li>
                 ))}
               </ul>

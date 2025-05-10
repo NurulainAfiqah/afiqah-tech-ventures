@@ -8,22 +8,26 @@ const projects = [
   {
     title: "Trash and Treasure Platform",
     description: "A sustainable platform that encourages recycling and upcycling within communities.",
-    tags: ["React", "Node.js", "MongoDB", "Sustainability"],
-    image: "/placeholder.svg",
+    tags: ["Python", "Django", "SQLite", "Design Patterns"],
+    image: "trash.png",
+    codeUrl: "https://github.com/NurulainAfiqah/Trash-and-Treasure",
   },
   {
     title: "Kwazam Chess Game",
     description: "A modern chess game with unique features and design patterns implementation.",
-    tags: ["Unity", "C#", "Game Development", "Design Patterns"],
-    image: "/placeholder.svg",
+    tags: [ "Java", "UI/UX", "Game Development", "Design Patterns"],
+    image: "kwazam.png",
+    codeUrl: "https://github.com/NurulainAfiqah/Kwazam-Chess",
   },
   {
     title: "Robot War Game Simulator",
     description: "A simulation platform for robot battles implementing various AI strategies.",
-    tags: ["Java", "AI", "Simulation", "Game Design"],
-    image: "/placeholder.svg",
+    tags: ["C++", "Object-Oriented", "Simulation"],
+    image: "robotwar.png",
+    codeUrl: "https://github.com/NurulainAfiqah/Robot-War-Game-Simulator",
   }
 ];
+
 
 const Projects = () => {
   return (
@@ -36,7 +40,6 @@ const Projects = () => {
             Explore my passion projects that combine technical skills with values of sustainability and community engagement.
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-lg border-portfolio-neutral-200 dark:border-gray-700 h-full flex flex-col">
@@ -65,21 +68,21 @@ const Projects = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button variant="outline" size="sm">
-                  <Github className="h-4 w-4 mr-2" /> Code
-                </Button>
-                <Button size="sm" className="bg-portfolio-purple-400 hover:bg-portfolio-purple-500">
-                  <ExternalLink className="h-4 w-4 mr-2" /> Demo
-                </Button>
+                <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                  <Button size="sm" className="bg-portfolio-purple-400 hover:bg-portfolio-purple-500">
+                    <Github className="h-4 w-4 mr-2" /> Code
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
         </div>
-
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-portfolio-purple-300 text-portfolio-purple-500">
-            View All Projects <ExternalLink className="h-4 w-4 ml-2" />
-          </Button>
+          <a href="https://github.com/NurulainAfiqah" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="border-portfolio-purple-300 text-portfolio-purple-500">
+              View All Projects <ExternalLink className="h-4 w-4 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -49,12 +49,18 @@ const Hero = () => {
         </div>
         <div className="order-1 md:order-2 flex justify-center">
           <div className="relative">
+
+
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-portfolio-purple-100 dark:bg-portfolio-purple-900/20 overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-              {/* This is a placeholder for profile image. Replace with actual image when available */}
-              <div className="w-full h-full flex items-center justify-center text-6xl bg-portfolio-purple-200 dark:bg-portfolio-purple-800/40">
-                NA
-              </div>
+              <img
+                src="Nurulain Afiqah Potraitt (Medium Filter).png" // Replace with your actual image path or URL
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
+
+
+
             <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg animate-wave">
               👩‍💻
             </div>
