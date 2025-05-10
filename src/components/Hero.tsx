@@ -19,18 +19,25 @@ const Hero = () => {
             </p>
             <div className="space-y-4">
               <p className="text-portfolio-neutral-500 dark:text-gray-400">
-                Bachelor of Computer Science student specializing in Software Engineering at Multimedia University, Malaysia.
+                Bachelor of Computer Science (hns.) Software Engineering<br></br> Multimedia University, Cyberjaya.
               </p>
               <div className="flex space-x-4">
-                <Button variant="default" className="bg-portfolio-purple-400 hover:bg-portfolio-purple-500">
-                  <Mail className="mr-2 h-4 w-4" /> Contact Me
-                </Button>
-                <Button variant="outline" className="border-portfolio-neutral-300">
-                  <Github className="mr-2 h-4 w-4" /> GitHub
-                </Button>
-                <Button variant="outline" className="border-portfolio-neutral-300">
-                  <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
-                </Button>
+                <a href="mailto:nurulain.afiqah@hotmail.com">
+                  <Button variant="default" className="bg-portfolio-purple-400 hover:bg-portfolio-purple-500">
+                    <Mail className="mr-2 h-4 w-4" /> Contact Me
+                  </Button>
+                </a>
+                <a href="https://github.com/NurulainAfiqah" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="border-portfolio-neutral-300">
+                    <Github className="mr-2 h-4 w-4" /> GitHub
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/nurulain-afiqah-abdullah" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="border-portfolio-neutral-300">
+                    <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+                  </Button>
+                </a>
+
               </div>
             </div>
           </div>
